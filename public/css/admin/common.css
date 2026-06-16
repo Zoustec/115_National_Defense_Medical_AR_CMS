@@ -1,0 +1,759 @@
+/* Table column width styles */
+.drag-column {
+    width: 50px !important;
+    text-align: center;
+}
+
+.actions-column {
+    width: 140px !important;
+    text-align: center;
+}
+
+.image-index {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.login-box, .register-box {
+    width: 50% !important;
+}
+@media screen and (max-width: 768px) {
+    .login-box, .register-box {
+        width: 90% !important;
+    }
+}
+
+label.required::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+.select2-selection.select2-selection--single {
+    height: 38px;
+}
+
+.nav-sidebar .nav-item .nav-item>.nav-link{
+    font-size: 14px;
+}
+
+.nav-sidebar .nav-treeview>.nav-item>.nav-link>.nav-icon {
+    width: 1rem;
+    font-size: 14px;
+    margin-left: 24px;
+}
+
+.black_select_2 .select2-container--default .select2-selection--multiple .select2-selection__choice{
+    color: #000 !important;
+    background-color: #e9ecef !important;
+    border: 1px solid rgba(0,0,0,0.06) !important;
+    border-radius: 4px !important;
+}
+
+/* Production Order Show Page Styles */
+.group_order_detail {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1.5rem;
+}
+
+.group_order_detail:last-child {
+    border-bottom: none;
+}
+
+.title_team_name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0;
+}
+
+.design-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.design-image-wrapper .img-thumbnail {
+    transition: transform 0.2s;
+}
+
+.design-image-wrapper .img-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.badge-lg {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Critical overdue order styling (RED) */
+.table-danger {
+    background-color: #f8d7da !important;
+}
+
+.table-danger:hover {
+    background-color: #f5c2c7 !important;
+}
+
+.table-danger td {
+    border-color: #f1aeb5 !important;
+}
+
+/* Warning severity styling (YELLOW) - within 3 days */
+.table-warning {
+    background-color: #fff3cd !important;
+}
+
+.table-warning:hover {
+    background-color: #ffecb5 !important;
+}
+
+.table-warning td {
+    border-color: #ffe69c !important;
+}
+
+/* Badge styling - Generic Bootstrap classes */
+.badge-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    animation: pulse-red 2s infinite;
+}
+
+.badge-warning,
+.badge-new{
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    animation: pulse-yellow 2s infinite;
+}
+
+.badge-info {
+    background-color: #17a2b8 !important;
+    color: #fff !important;
+}
+
+.badge-success {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+.badge-primary {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.badge-secondary {
+    background-color: #6c757d !important;
+    color: #fff !important;
+}
+
+.badge-dark {
+    background-color: #343a40 !important;
+    color: #fff !important;
+}
+
+/* OrderStatus-specific badge classes - WARNING statuses */
+.badge-new,
+.badge-confirming {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    animation: pulse-yellow 2s infinite;
+}
+
+/* OrderStatus-specific badge classes - INFO statuses */
+.badge-in_production,
+.badge-assign_to_supplier,
+.badge-supplier_exported_pi {
+    background-color: #17a2b8 !important;
+    color: #fff !important;
+}
+
+/* OrderStatus-specific badge classes - SUCCESS statuses */
+.badge-order_confirmed,
+.badge-pi_approved,
+.badge-color_test_approved,
+.badge-completed_production,
+.badge-delivery_to_japan_warehouse_approved,
+.badge-delivered_completed,
+.badge-return_sample_completed,
+.badge-shipment_prepared,
+.badge-partial_shipment_prepared {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+/* OrderStatus-specific badge classes - DANGER statuses */
+.badge-order_rejected,
+.badge-supplier_rejected,
+.badge-pi_rejected,
+.badge-color_test_rejected {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    animation: pulse-red 2s infinite;
+}
+
+/* OrderStatus-specific badge classes - PRIMARY statuses */
+.badge-shipping,
+.badge-partial_shipping,
+.badge-shipping_to_japan_warehouse,
+.badge-partially_delivered {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+/* OrderStatus-specific badge classes - SECONDARY statuses */
+.badge-consolidating,
+.badge-in_storage,
+.badge-request_color_test,
+.badge-request_approve_delivery_to_japan_warehouse {
+    background-color: #6c757d !important;
+    color: #fff !important;
+}
+
+/* OrderStatus-specific badge classes - DARK statuses */
+.badge-requesting_return_of_sample_product,
+.badge-returning_sample_product,
+.badge-return_sample_requested,
+.badge-return_sample_in_progress {
+    background-color: #343a40 !important;
+    color: #fff !important;
+}
+
+/* PaymentStatus-specific badge classes */
+.badge-waiting_for_payment,
+.badge-status {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+.badge-exported_pi {
+    background-color: #17a2b8 !important;
+    color: #fff !important;
+}
+
+.badge-requesting_confirm_payment {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.badge-confirmed_payment {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+.badge-rejected_payment {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+/* Badge hover effects */
+.badge-danger:hover,
+.badge-order_rejected:hover,
+.badge-supplier_rejected:hover,
+.badge-pi_rejected:hover,
+.badge-color_test_rejected:hover,
+.badge-rejected_payment:hover {
+    background-color: #c82333 !important;
+}
+
+.badge-warning:hover,
+.badge-new:hover,
+.badge-confirming:hover,
+.badge-waiting_for_payment:hover,
+.badge-status:hover {
+    background-color: #e0a800 !important;
+}
+
+.badge-info:hover,
+.badge-in_production:hover,
+.badge-assign_to_supplier:hover,
+.badge-supplier_exported_pi:hover,
+.badge-exported_pi:hover {
+    background-color: #138496 !important;
+}
+
+.badge-success:hover,
+.badge-confirmed_payment:hover,
+.badge-order_confirmed:hover,
+.badge-pi_approved:hover,
+.badge-color_test_approved:hover,
+.badge-completed_production:hover,
+.badge-delivery_to_japan_warehouse_approved:hover,
+.badge-delivered_completed:hover,
+.badge-return_sample_completed:hover {
+    background-color: #218838 !important;
+}
+
+.badge-primary:hover,
+.badge-shipping:hover,
+.badge-partial_shipping:hover,
+.badge-shipping_to_japan_warehouse:hover,
+.badge-partially_delivered:hover,
+.badge-requesting_confirm_payment:hover {
+    background-color: #0069d9 !important;
+}
+
+.badge-secondary:hover,
+.badge-consolidating:hover,
+.badge-in_storage:hover,
+.badge-request_color_test:hover,
+.badge-request_approve_delivery_to_japan_warehouse:hover {
+    background-color: #5a6268 !important;
+}
+
+.badge-dark:hover,
+.badge-requesting_return_of_sample_product:hover,
+.badge-returning_sample_product:hover,
+.badge-return_sample_requested:hover,
+.badge-return_sample_in_progress:hover {
+    background-color: #23272b !important;
+}
+
+/* Animations */
+@keyframes pulse-red {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes pulse-yellow {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.75;
+    }
+}
+
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.wrap_box_order_user{
+    width: 100%;
+}
+
+.wrap_box_order_user form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.wrap_box_production_order_user{
+    width: 100%;
+}
+
+.wrap_box_production_order_user form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-tools-order-user .btn-save-order-user,
+.card-tools-order-user .btn-cancel-edit-order-user,
+.card-tools-order-user .btn-save-production-order-user,
+.card-tools-order-user .btn-cancel-edit-production-order-user{
+    display: none;
+}
+
+.card-tools-order-user.edit_user .btn-save-order-user,
+.card-tools-order-user.edit_user .btn-cancel-edit-order-user,
+.card-tools-order-user.edit_user .btn-save-production-order-user,
+.card-tools-order-user.edit_user .btn-cancel-edit-production-order-user{
+    display: inline-block;
+}
+
+.card-tools-order-user.edit_user .btn-edit-order-user,
+.card-tools-order-user.edit_user .btn-edit-production-order-user{
+    display: none;
+}
+
+.wrap_box_order_user .show_on_edit,
+.wrap_box_production_order_user .show_on_edit{
+    display: none;
+}
+
+.wrap_box_order_user.edit_user .show_on_edit,
+.wrap_box_production_order_user.edit_user .show_on_edit{
+    display: block;
+}
+
+.wrap_box_order_user.edit_user .none_on_edit,
+.wrap_box_production_order_user.edit_user .none_on_edit{
+    display: none;
+}
+
+.mgb10{
+    margin-bottom:10px;
+}
+
+.expandable_product{
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+
+/* Design image button positioning */
+.design-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.design-image-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex-direction: column;
+}
+.btn_change_design_image {
+    padding: 0;
+    font-size: 15px;
+    line-height: 1;
+    border-radius: 3px;
+    right: 0;
+    top: 0;
+}
+
+.mgl5{
+    margin-left: 5px;
+}
+
+.display-inline{
+    display: inline-block;
+}
+.with-100{
+    width: 100%;
+}
+
+.modal-body .edit_design{
+    float: right;
+}
+
+.form-group.file-input-section{
+    display: none !important;
+}
+
+.dis-flex{
+    display: flex;
+}
+
+.flex-gap-10{
+    gap: 10px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    color: #000;
+}
+
+.order-type-dropdown .dropdown-toggle-icon {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.order-type-dropdown .dropdown-toggle-icon:hover {
+    color: #007bff;
+}
+
+.order-type-dropdown .dropdown-toggle-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.order-type-dropdown .dropdown-toggle-icon i {
+    font-size: 0.875rem;
+}
+
+.order-type-dropdown .dropdown-item {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.order-type-dropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.order-type-dropdown .dropdown-item:active {
+    background-color: #e9ecef;
+}
+
+/* Style for order detail groups */
+.group_order_detail {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.group_order_detail:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.group_order_detail:last-child {
+    margin-bottom: 0;
+}
+
+/* Order detail section - Title and value styling */
+.group_order_detail .text-muted.d-block {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+/* Team name title styling - Prominent header for order detail groups */
+.group_order_detail .title_team_name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    padding: 10px 15px;
+    background-clip: text;
+    border-left: 4px solid #000000;
+    padding-left: 12px;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Alternative solid background style - uncomment to use */
+/*
+.group_order_detail .title_team_name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ffffff;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 5px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
+}
+*/
+
+/* Value styling for better distinction */
+.group_order_detail .mr-4.mb-2 > span:not(.text-muted):not(.badge) {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #212529;
+}
+
+/* Order type text styling */
+.group_order_detail .order-type-text {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #212529;
+}
+
+/* Design image wrapper styling */
+.group_order_detail .design-image-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.group_order_detail .design-image-wrapper span {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #212529;
+}
+
+/* Hide edit button by default */
+.group_order_detail .design-image-wrapper .btn_change_design,
+.group_order_detail .design-image-wrapper .btn_change_design_image {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    padding: 4px 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 10;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.group_order_detail .design-image-wrapper .btn_change_design i,
+.group_order_detail .design-image-wrapper .btn_change_design_image i {
+    font-size: 11px;
+}
+
+.group_order_detail .design-image-wrapper .btn_change_design:hover,
+.group_order_detail .design-image-wrapper .btn_change_design_image:hover {
+    background-color: #212529;
+    color: #ffffff;
+    border-color: #212529;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/* Show edit button on hover over the wrapper */
+.group_order_detail .design-image-wrapper:hover .btn_change_design,
+.group_order_detail .design-image-wrapper:hover .btn_change_design_image {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Style the image for better hover effect */
+.group_order_detail .design-image-wrapper .img-thumbnail {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.group_order_detail .design-image-wrapper:hover .img-thumbnail {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+body .positon_relative{
+    position: relative;
+}
+
+body .position_static{
+    position: static;
+}
+
+body .position_static .dropdown-menu.show{
+    transform: none !important;
+    top: auto !important;
+}
+
+.supplier-info, .logistic-info {
+    min-width: 150px;
+}
+
+.dates-info small {
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table_scroll_x{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.content-wrapper{
+    padding-bottom: 20px;
+}
+
+.custom-tabs {
+    display: flex;
+    background: #f6f8fa;
+    border-radius: 12px;
+    padding: 4px;
+    margin-bottom: 1rem;
+}
+.custom-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+    color: #333;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.custom-tab.active {
+    background: #3b82f6;
+    color: #fff;
+}
+.custom-tab .badge {
+    margin-left: 6px;
+}
+
+/* Custom small tab style for sub-tabs */
+.custom-tabs.custom-tabs-sm {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    background: none;
+    margin-bottom: 0.5rem;
+}
+.custom-tabs.custom-tabs-sm .custom-tab {
+    min-width: 120px;
+    padding: 6px 18px;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    background: #fff;
+    color: #007bff;
+    font-weight: 500;
+    margin-right: 2px;
+    border-radius: 6px 6px 0 0;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+.custom-tabs.custom-tabs-sm .custom-tab.active {
+    background: #fff;
+    color: #007bff;
+    border-bottom: 2px solid #fff;
+    font-weight: 600;
+}
+.custom-tabs.custom-tabs-sm .custom-tab:not(.active) {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.table-row-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.date-changed-highlight {
+    color: #dc3545 !important;
+    font-weight: 600;
+}
+
+.text-red {
+    color: #dc3545 !important;
+}
+
+.text-orange {
+    color: #fd7e14 !important;
+}
+
+.bold-600 {
+    font-weight: 600 !important;
+}
+
+.form-control.disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+  pointer-events: none;
+}

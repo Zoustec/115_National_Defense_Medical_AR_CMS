@@ -1,0 +1,4 @@
+port: 8080
+environment:
+  develop:
+    domain: cms-medical-ar.dev1.bnksolution.com

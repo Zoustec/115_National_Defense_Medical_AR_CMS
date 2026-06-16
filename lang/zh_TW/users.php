@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'title_list' => '使用者列表',
+    'user_details' => '使用者詳細資料',
+    'tab_students' => '學生',
+    'tab_teachers' => '教師',
+    'role' => '身份',
+    'role_student' => '學生',
+    'role_teacher' => '教師',
+    'username' => '帳號',
+    'cname' => '中文姓名',
+    'email' => '電子信箱',
+    'emp_id' => '學號 / 員工編號',
+    'hash_id' => '使用者識別碼',
+    'unit_label' => '單位',
+    'job_title' => '職稱',
+    'status' => '帳戶狀態',
+    'status_active' => '使用中',
+    'status_suspended' => '已停權',
+    'last_login_at' => '最後登入時間',
+    'created_at' => '建立時間',
+    'no_users_found' => '找不到使用者。',
+    'search_placeholder' => '搜尋帳號、姓名、信箱或員工編號',
+    'adjust_search_criteria' => '請嘗試調整搜尋條件。',
+    'sso_readonly_notice' => '此頁面為唯讀，所有使用者資料皆與醫院 SSO 系統同步。如需新增 / 停用帳戶，請至 SSO 後台設定。',
+];

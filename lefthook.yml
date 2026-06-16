@@ -1,0 +1,11 @@
+# pre-commit:
+#   parallel: true
+#   commands:
+#     pint:
+#       run: ./vendor/bin/pint --test
+#     phpstan:
+#       run: ./vendor/bin/phpstan analyse app --exclude vendor --exclude app/View/Components/Adminlte
+#     insights:
+#       run: php artisan insights --no-interaction --quiet --exclude=vendor --exclude=app/View/Components/Adminlte
+#     phpmd:
+#       run: ./vendor/bin/phpmd app text cleancode,codesize,controversial,design,naming,unusedcode --exclude vendor,app/View/Components/Adminlte

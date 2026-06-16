@@ -1,0 +1,73 @@
+<?php
+
+return [
+    'categories'      => '食物分類',
+    'category'        => '分類',
+    'items'           => '食物項目',
+    'item'            => '項目',
+    'recommend_items' => '替換食材',
+    'recommend_item'  => '替換食材',
+    'learning_units'  => '學習單元',
+    'learning_unit'   => '學習單元',
+
+    'create_title' => '新增:resource',
+    'edit_title'   => '編輯:resource',
+    'list_title'   => ':resource列表',
+
+    'code'           => '代碼',
+    'name'           => '名稱',
+    'description'    => '描述',
+    'status'         => '狀態',
+    'image'          => '圖片路徑',
+    'image_short'    => '圖片',
+    'display_order'  => '顯示順序',
+    'model'          => '模型 / 選項代碼',
+    'category_id'    => '分類',
+    'unit'           => '份數',
+    'unit_text'      => '單位文字',
+    'weight'         => '重量',
+    'column'         => '替換群組',
+    'applicable_objects' => '適用對象 (逗號分隔)',
+    'dietary_recommendation_title' => '飲食建議標題',
+    'dietary_recommendations'      => '飲食建議內容',
+    'clinical_note_title' => '臨床小提醒標題',
+    'clinical_notes'      => '臨床小提醒內容',
+    'is_locked'      => '鎖定',
+    'is_active'      => '啟用',
+    'username'       => '帳號',
+    'email'          => '電子郵件',
+
+    'column_staple' => '1 — 主食',
+    'column_main'   => '2 — 主菜',
+    'column_fruit'  => '3 — 水果',
+
+    'tab_basic'         => '基本資料',
+    'tab_items'         => '項目',
+    'tab_replacements'  => '替換食材',
+    'items_help'        => '勾選「加入」以將項目加入此單元。「預設」表示顯示於預設餐盤的項目。',
+    'replacements_help' => '勾選「啟用」以將替換食材加入此單元，「替換群組」決定其所屬的替換組別。',
+    'include'           => '加入',
+    'default'           => '預設',
+    'enable'            => '啟用',
+    'show_selected_only' => '只顯示已選',
+    'filter_all_categories' => '全部分類',
+
+    'search_placeholder' => '輸入名稱搜尋⋯',
+    'no_results'         => '沒有符合的項目。',
+    'clear_filters'      => '清除',
+
+    'created_successfully' => ':resource建立成功',
+    'updated_successfully' => ':resource更新成功',
+    'deleted_successfully' => ':resource刪除成功',
+
+    'confirm_enable_title'  => '確認啟用？',
+    'confirm_enable_text'   => '您確定要啟用此項目嗎？',
+    'confirm_disable_title' => '確認停用？',
+    'confirm_disable_text'  => '您確定要停用此項目嗎？停用後將不會顯示於學生 / 教師端。',
+
+    // Validation
+    'duplicate' => ':attribute已存在，請勿重複建立',
+    'duplicate_cancelled' => '資料尚未儲存，已取消本次變更。',
+    'name_required' => '名稱欄位為必填',
+    'code_required' => '代碼欄位為必填',
+];

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="Custom PHPMD Rules"
+         xmlns="http://pmd.sf.net/ruleset/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd">
+
+    <description>Custom ruleset without StaticAccess, CouplingBetweenObjects, TooManyPublicMethods</description>
+
+    <!-- ✅ import cleancode but exclude StaticAccess -->
+    <rule ref="rulesets/cleancode.xml">
+        <exclude name="StaticAccess"/>
+    </rule>
+
+    <!-- ✅ import codesize but exclude CyclomaticComplexity + TooManyPublicMethods -->
+    <rule ref="rulesets/codesize.xml">
+        <exclude name="CyclomaticComplexity"/>
+        <exclude name="TooManyPublicMethods"/>
+    </rule>
+
+    <!-- keep others -->
+    <rule ref="rulesets/controversial.xml"/>
+    <rule ref="rulesets/design.xml">
+        <exclude name="CouplingBetweenObjects"/>
+    </rule>
+    <rule ref="rulesets/naming.xml"/>
+    <rule ref="rulesets/unusedcode.xml"/>
+
+</ruleset>

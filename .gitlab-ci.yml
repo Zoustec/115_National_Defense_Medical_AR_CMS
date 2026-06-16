@@ -1,0 +1,11 @@
+.template-project: &project
+  project: devops/auto-devops
+  ref: v2
+
+include:
+  - file: auto-devops.yml
+    << : *project
+  - file: docker-build.yml
+    << : *project
+  - file: deploy-k8s.yml
+    << : *project

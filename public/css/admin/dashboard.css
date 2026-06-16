@@ -1,0 +1,76 @@
+/**
+ * Dashboard Styles
+ */
+
+/* Info boxes */
+.dashboard-info-box {
+    min-height: 120px;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+}
+
+.dashboard-info-box .info-box-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Small boxes */
+.dashboard-small-box {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+}
+
+.dashboard-small-box .icon {
+    font-size: 70px;
+}
+
+/* Card headers */
+.dashboard-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* Tabs */
+.dashboard-tabs .nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.dashboard-tabs .nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 500;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+
+.dashboard-tabs .nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #007bff;
+}
+
+.dashboard-tabs .nav-tabs .nav-link.active {
+    font-weight: 600;
+    color: #007bff;
+    border-color: transparent;
+    border-bottom-color: #007bff;
+    background-color: transparent;
+}
+
+/* Charts */
+.dashboard-chart-container {
+    position: relative;
+    height: 300px;
+    margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-small-box .icon {
+        font-size: 50px;
+    }
+    
+    .dashboard-info-box .info-box-number {
+        font-size: 1.2rem;
+    }
+}

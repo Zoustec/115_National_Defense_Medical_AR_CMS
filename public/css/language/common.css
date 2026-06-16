@@ -1,0 +1,10 @@
+.lang-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.rounded-left-right {
+    border-radius: 50px;
+}
