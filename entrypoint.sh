@@ -16,7 +16,7 @@ php artisan storage:link
 # prism mock storage/api-docs/api-docs.json --port 4000
 
 # ============================================
-# Cron đã được quản lý bởi Supervisor
+# Cron is now managed by Supervisor
 # ============================================
 # echo "Starting crond"
 # service cron start
@@ -35,16 +35,16 @@ else
 fi
 
 # ============================================
-# Queue workers đã được quản lý bởi Supervisor
+# Queue workers are now managed by Supervisor
 # ============================================
 # nohup php artisan queue:listen --timeout=1800 > /var/www/html/storage/logs/queue.log 2>&1 &
 
 # ============================================
-# Apache đã được quản lý bởi Supervisor
+# Apache is now managed by Supervisor
 # ============================================
 # echo "Starting Apache"
 # apache2-foreground
 
-# Start supervisord (quản lý Apache, Queue workers, và Cron)
+# Start supervisord (manages Apache, Queue workers, and Cron)
 echo "Starting Supervisord"
 exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf

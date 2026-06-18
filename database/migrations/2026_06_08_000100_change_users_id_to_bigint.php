@@ -7,11 +7,11 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 /**
- * Đổi users.id (và các user_id liên quan) từ UUID char(36) sang BIGINT
- * AUTO_INCREMENT. Migration chỉ đổi KIỂU cột; việc chuyển dữ liệu UUID hiện có
- * sang số được xử lý riêng bằng database/sql/convert_users_id_to_bigint.sql.
+ * Change users.id (and the related user_id columns) from UUID char(36) to BIGINT
+ * AUTO_INCREMENT. This migration only changes the column TYPE; converting existing
+ * UUID data into numbers is handled separately by database/sql/convert_users_id_to_bigint.sql.
  *
- * Phải gỡ khoá ngoại trước khi đổi kiểu PK đang được tham chiếu, rồi tạo lại.
+ * Foreign keys must be dropped before changing the referenced PK type, then recreated.
  */
 return new class extends Migration
 {

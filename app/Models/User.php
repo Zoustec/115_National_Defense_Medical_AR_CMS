@@ -19,7 +19,7 @@ class User extends Model
 
     public const array ROLES = [self::ROLE_STUDENT, self::ROLE_TEACHER];
 
-    // id là BIGINT AUTO_INCREMENT (mặc định của Eloquent) — bỏ HasUuids.
+    // id is BIGINT AUTO_INCREMENT (Eloquent default) — drop HasUuids.
 
     protected $fillable = [
         'username',
